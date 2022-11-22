@@ -1,6 +1,6 @@
 # Algoritmo lluvia
 
-Script de Python, para identificar grabaciones acústicas con lluvia. Se cuenta con la posibilidad de utilizar la versión propuesta por DUQUE,2019 Y la versión de EDISON,2022.
+Script de Python, para identificar grabaciones acústicas con lluvia. Se cuenta con la posibilidad de utilizar la versión propuesta por DUQUE,2019 y la versión de EDISON,2022.
 
 ## Como utilizar este algoritmo desarroyado en Python?
 
