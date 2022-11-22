@@ -45,4 +45,9 @@ Una vez, estamos en la ruta donde se encuentra el archivo ***lluvia_plateromodEd
 ```python
 (algoritmolluvia) $ >> python lluvia_plateromodEdison.py -Edison_Duque 'E_D' -p 'path' -pr 'patharch' -name 'name'
 ```
+Ejemplo del comando anterior
+
+```python
+(algoritmolluvia) $ >> python lluvia_plateromodEdison.py -Edison_Duque 'True' -p 'C:\Users\grabaciones_prueba' -pr 'C:\Users\Algoritmo_result' -name 'ResultGrab.xlsx'
+```
 
