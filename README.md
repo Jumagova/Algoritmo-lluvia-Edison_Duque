@@ -1,30 +1,38 @@
-# Cambiar nombre y extensión de archivos .WAV
+# Algoritmo lluvia
 
-Script de Python, para modificar el nombre y la extensión de archivos. Identifica todos los archivos dentro de la carpeta raiz y cambia la extensión de los archivos a minuscula ejemplo ('.WAV' a '.wav'). Luego, modifica el nombre a cada archivo, agregando un prefijo, correspondiente a la carpeta al que pertence.
+Script de Python, para identificar grabaciones acústicas con lluvia. Se cuenta con la posibilidad de utilizar la versión propuesta por DUQUE,2019 Y la versión de EDISON,2022.
 
 ## Como utilizar este algoritmo desarroyado en Python?
 
-Desde la terminal de anaconda, ejecutamos la siguiente instrucción de codigo, para crear una variable de entorno de python llamada ***algoritmoExt***
+Desde la terminal de anaconda, ejecutamos la siguiente instrucción de codigo, para crear una variable de entorno de python llamada ***algoritmolluvia***
 
 
 ```python
 
-conda create --name algoritmoExt python=3.10.6
+conda create --name algoritmolluvia python=3.10.6
 
 ```
 
-Lluego activamos, la variable de entorno ***algoritmoExt*** mediante la siguente instrucción
+Lluego activamos, la variable de entorno ***algoritmolluvia*** mediante la siguente instrucción
 
 ```python
-conda activate algoritmoExt
+conda activate algoritmolluvia
 ```
 Despues de ejecutar el comando debemos verificar que el ambiente se activo, para esto debemos fijarnos en la terminal donde al principio de la linea debe indicar el ambiente sobre el cual estamos trabajando, como se ve a continuación.
 
 ```python
-(algoritmoExt) $ >>
+(algoritmolluvia) $ >>
 ```
+A continuación, instalamos en la variable de entorno ***algoritmolluvia*** las librerías necesarias para correr el algoritmo en Pytnon sin problemas, mediante las siguientes instrucciones
 
-
+```python
+(algoritmolluvia) $ >> pip install soundfile 
+(algoritmolluvia) $ >> conda install pandas
+(algoritmolluvia) $ >> conda install numpy 
+(algoritmolluvia) $ >> pip install scipy
+(algoritmolluvia) $ >> conda install -c conda-forge tqdm
+(algoritmolluvia) $ >> pip install openpyxl
+```
 
 Finalmente, nos ubicamos en la ruta donde se encuentra el archivo ***cambiar_ext.py***, el cual contiene el algoritmo que deseamos utilizar
 
