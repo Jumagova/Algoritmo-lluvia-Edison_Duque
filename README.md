@@ -34,15 +34,15 @@ A continuación, instalamos en la variable de entorno ***algoritmolluvia*** las 
 (algoritmolluvia) $ >> pip install openpyxl
 ```
 
-Finalmente, nos ubicamos en la ruta donde se encuentra el archivo ***cambiar_ext.py***, el cual contiene el algoritmo que deseamos utilizar
+Finalmente, nos ubicamos en la ruta donde se encuentra el archivo ***lluvia_plateromodEdison.py***, el cual contiene el algoritmo que deseamos utilizar
 
 ```python
-cd ubicacion_del_archivo_cambiar_ext.py
+cd ubicacion_del_archivo_lluvia_plateromodEdison.py
 ```
 
-Una vez, estamos en la ruta donde se encuentra el archivo ***cambiar_ext.py***, ejecutamos el siguiente comando. Donde el ***path***, es la ruta de la carpeta raiz que contiene los archivos que queremos modificar.
+Una vez, estamos en la ruta donde se encuentra el archivo ***lluvia_plateromodEdison.py***, ejecutamos el siguiente comando. Donde ***E_D*** es una variable booleana para utilizar la versión del algoritmo lluvia EDISON,2022 (True) y DUQUE,2019 (False). El ***path*** es la ruta de la carpeta raíz que contiene las carpetas con las grabaciones acústicas que queremos identificar con lluvia. El ***patharch*** es la ruta donde vamos a guardar el archivo Excel con los resultados y ***name*** es el nombre del archivo Excel con extensión .xlsx
 
 ```python
-(algoritmoExt) $ >> python cambiar_ext.py -p 'path'
+(algoritmolluvia) $ >> python lluvia_plateromodEdison.py -Edison_Duque 'E_D' -p 'path' -pr 'patharch' -name 'name'
 ```
 
