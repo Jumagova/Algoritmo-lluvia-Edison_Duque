@@ -40,7 +40,7 @@ Finalmente, nos ubicamos en la ruta donde se encuentra el archivo ***lluvia_plat
 cd ubicacion_del_archivo_lluvia_plateromodEdison.py
 ```
 
-Una vez, estamos en la ruta donde se encuentra el archivo ***lluvia_plateromodEdison.py***, ejecutamos el siguiente comando. Donde ***E_D*** es una variable booleana para utilizar la versión del algoritmo lluvia EDISON,2022 (True) y DUQUE,2019 (False). El ***path*** es la ruta de la carpeta raíz que contiene las carpetas con las grabaciones acústicas que queremos identificar con lluvia. El ***patharch*** es la ruta donde vamos a guardar el archivo Excel con los resultados. El ***name*** es el nombre del archivo Excel con extensión .xlsx y ***seg***  es el tiempo de duración de las grabaciones en segundos con la que se decea trabajar.
+Una vez, estamos en la ruta donde se encuentra el archivo ***lluvia_plateromodEdison.py***, ejecutamos el siguiente comando. Donde ***E_D*** es una variable booleana para utilizar la versión del algoritmo lluvia EDISON,2022 (True) y DUQUE,2019 (False). El ***path*** es la ruta de la carpeta raíz que contiene las carpetas con las grabaciones acústicas que queremos identificar con lluvia. El ***patharch*** es la ruta donde vamos a guardar el archivo Excel con los resultados. El ***name*** es el nombre del archivo Excel con extensión .xlsx y ***seg***  ***  es el tiempo de duración de las grabaciones en segundos con la que se desea trabajar.
 
 ```Python
 (algoritmolluvia) $ >> python lluvia_plateromodEdison.py -Edison_Duque 'E_D' -p 'path' -pr 'patharch' -name 'name'  -seg 'seg'
