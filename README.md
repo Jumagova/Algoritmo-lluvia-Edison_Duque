@@ -50,7 +50,7 @@ CMD  python lluvia_plateromodEdison.py -Edison_Duque True -p 'grabaciones' -pr '
 
 Por ejemplo, si deseas utilizar la versión del algoritmo lluvia DUQUE,2019 y trabajar con grabaciones de 120 segundos, el comando se vería así:
 
-``
+```
 CMD python lluvia_plateromodEdison.py -Edison_Duque False -p 'grabaciones' -pr 'resultados' -name 'ResultGrab.xlsx' -seg 120
 ```
 
