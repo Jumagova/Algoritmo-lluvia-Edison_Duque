@@ -1,0 +1,30 @@
+#!/bin/bash
+
+CONTAINER_NAME="container-algoritmo-lluvia"
+DOCKER_IMAGE_NAME="lluvia_filter"
+HOST_GRABACIONES_PATH="absolute path to your folder grabaciones"
+HOST_RESULTADOS_PATH="absolute path to ypour folder resultados"
+
+case "$(uname -s)" in
+    Linux*)     HOST_MACHINE="linux";;
+    Darwin*)    HOST_MACHINE="mac";;
+    CYGWIN*)    HOST_MACHINE="windows";;
+    MINGW*)     HOST_MACHINE="windows";;
+    *)          HOST_MACHINE="unknown"
+esac
+
+if [ "$HOST_MACHINE" = "windows" ]; then
+    WIN_GRABACIONES_PATH="$(wslpath -w "$HOST_GRABACIONES_PATH")"
+    WIN_RESULTADOS_PATH="$(wslpath -w "$HOST_RESULTADOS_PATH")"
+else
+    WIN_GRABACIONES_PATH="$HOST_GRABACIONES_PATH"
+    WIN_RESULTADOS_PATH="$HOST_RESULTADOS_PATH"
+fi
+
+docker run \
+       -it \
+       --volume "$WIN_GRABACIONES_PATH:/grabaciones" \
+       --volume "$WIN_RESULTADOS_PATH:/resultados" \
+       --name "$CONTAINER_NAME" \
+       --rm \
+       "$DOCKER_IMAGE_NAME"

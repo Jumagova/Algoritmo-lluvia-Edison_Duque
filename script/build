@@ -1,0 +1,6 @@
+#!/bin/bash
+
+DOCKER_IMAGE_NAME="lluvia_filter"
+DOCKERFILE_PATH="./Dockerfile"
+
+docker build -t "$DOCKER_IMAGE_NAME" -f "$DOCKERFILE_PATH" .
