@@ -14,7 +14,7 @@ Para utilizar el algoritmo en un contenedor Docker, primero debes compilar la im
 
 Esto creará una imagen Docker con el nombre `lluvia_filter` utilizando el archivo Dockerfile proporcionado.
 
-### Paso 3: Agregar las grabaciones a la carpeta grabaciones
+### Paso 2: Agregar las grabaciones a la carpeta grabaciones
 
 Debes agregar tus grabaciones en formato .wav a la carpeta de grabaciones, tu resultado lo encontraras en la carpeta resultados, recuerda cambiar el path de estas carpetas en el archivo run.sh
 ### Paso 3: Ejecutar el contenedor
